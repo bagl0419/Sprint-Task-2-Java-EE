@@ -26,6 +26,8 @@ public class AuthServlet extends HttpServlet {
         session.setAttribute("message", message);
         if (message.equals("success")) {
             resp.sendRedirect("/profile");
+        } else {
+            resp.sendRedirect("/auth");
         }
     }
 }
