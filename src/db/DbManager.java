@@ -57,7 +57,6 @@ public class DbManager {
         if (!Objects.equals(user.getPassword(), password)) {
             return "passwordError";
         }
-
         return "success";
     }
 
